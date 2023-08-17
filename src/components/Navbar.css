@@ -1,0 +1,39 @@
+.Navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 5;
+}
+
+.Navbar .navbar-collapse form button {
+    border-color: white;
+    color: white;
+}
+
+.Navbar .navbar-collapse form button:hover {
+    background-color: #acd7ff;
+}
+
+.Navbar .nav-item .nav-link {
+    position: relative;
+    font-weight: 600;
+}
+
+.Navbar .nav-item li .active {
+    color: #9cb3ca;
+}
+
+.Navbar .cart-items {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(157, 233, 240);
+    position: absolute;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    right: -7px;
+    top: 5px;
+    color: black;
+}
