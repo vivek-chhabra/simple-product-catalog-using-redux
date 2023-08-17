@@ -57,5 +57,5 @@
 }
 
 .CartItem button:active {
-    background-color: #b45252;
+    background-color: #8e5151 !important;
 }

@@ -22,12 +22,12 @@ const productSlice = createSlice({
     reducers: {
         getCartItems: (state, action) => {
             if (state.cartItems.every((item) => item.id !== action.payload.id)) {
-                state.cartItems = [...state.cartItems, action.payload];
+                state.cartItems.push(action.payload);
             }
         },
-        removeCartItem: (state,action) => {
-            state.cartItems = state.cartItems.filter(item => item.id !== action.payload)
-        }
+        removeCartItem: (state, action) => {
+            state.cartItems = state.cartItems.filter((item) => item.id !== action.payload);
+        },
     },
     extraReducers: (builder) => {
         builder.addCase(fetchRequest.pending, (state) => {
