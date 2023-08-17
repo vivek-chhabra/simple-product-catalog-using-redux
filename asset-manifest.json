@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple-product-catalog-using-redux/static/css/main.8cd506e2.css",
+    "main.js": "/simple-product-catalog-using-redux/static/js/main.fb2bf774.js",
+    "index.html": "/simple-product-catalog-using-redux/index.html",
+    "main.8cd506e2.css.map": "/simple-product-catalog-using-redux/static/css/main.8cd506e2.css.map",
+    "main.fb2bf774.js.map": "/simple-product-catalog-using-redux/static/js/main.fb2bf774.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cd506e2.css",
+    "static/js/main.fb2bf774.js"
+  ]
+}
