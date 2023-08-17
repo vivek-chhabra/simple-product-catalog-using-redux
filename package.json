@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "homepage": "",
+  "name": "simple-product-catalog-using-redux",
+  "homepage": "https://vivek-chhabra.github.io/simple-product-catalog-using-redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

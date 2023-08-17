@@ -11,7 +11,8 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Amazon-Clone" element={<Navigate to={'/'}></Navigate>} />
+                <Route path="/Amazon-Clone" element={<Navigate to={"/"}></Navigate>} />
+                <Route path="/simple-product-catalog-using-redux" element={<Navigate to={"/"}></Navigate>} />
                 <Route path="/cart" element={<Cart />} />
             </Routes>
         </div>
