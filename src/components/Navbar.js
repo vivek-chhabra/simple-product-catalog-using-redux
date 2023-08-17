@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import React from "react";
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
+    // selector
+    const state = useSelector((data) => {
+        return data;
+    });
+    const { cartItems } = state;
+    console.log('innavbar', state.cartItems)
+
     return (
         <div className="Navbar">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -16,14 +24,14 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item mx-3">
-                                <NavLink to={'/'} className="nav-link active" aria-current="page" href="#">
+                                <NavLink to={"/"} className="nav-link active" aria-current="page" href="#">
                                     Home
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to={'/cart'} className="nav-link active" href="#">
+                                <NavLink to={"/cart"} className="nav-link active" href="#">
                                     Cart
-                                    <span className="cart-items">0</span>
+                                    <span className="cart-items">{cartItems.length}</span>
                                 </NavLink>
                             </li>
                         </ul>

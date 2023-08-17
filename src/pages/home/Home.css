@@ -1,3 +1,11 @@
 .Home {
     padding: 20px;
 }
+
+.Home .products {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
